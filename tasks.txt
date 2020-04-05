@@ -1,8 +1,0 @@
-This app currently allows a user to put information into a form and it will insert it into a local database. 
-
-Also, this app has created 2 simple routes.
-
-One can be requested with localhost:5000/contact
-
-and the other can be requested with
-localhost:5000/about

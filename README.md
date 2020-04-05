@@ -12,15 +12,11 @@ router
 path
 mongoose
 body-parser
+crypto
 
+This app allows a user to enter his/her information and signup with an email and a password.
+Once they click signup a confirmation link will be sent to their email.
+Once they click on the confirmation link their account will be verified.
 
-In its current state, this app can connect to a local database and insert into a collection. To work with your PC, you must go to line 12 in server.js and change the /alaindb to the name of your database.
+This app uses a token that will be stored in the database that corresponds to the user's userID in the database. This same userID will be used in the link and when they click on it, the server processes the get request and checks for the userID and finds if there is a user with that ID then sets their "isverified" property to true.
 
-Also, to work within one of your collections, you must go to line 22 and change the first parameter of function model to the name of your collection.
-
-With those changes you can insert into your local database.
-
-To access the routes there are no changes that need to be made. Simply try them out with
-
-localhost:5000/contact
-localhost:5000/about

@@ -25,3 +25,6 @@ THIS APP BUILDS ON THE REGISTRATION COMPONENT PREVIOUSLY BUILT
 
 The app now tracks the user's information on login and provides them with their name upon login and when they last logged in. On first login, the user should have the current date and time as their last logged in.
 
+For this app I had to learn how to use ejs to render my pages with the variables that I needed which were the user's name and the last time they logged in.
+
+
